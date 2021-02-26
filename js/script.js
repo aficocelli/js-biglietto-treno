@@ -19,22 +19,25 @@
   // condizione sconto minorenni
 
   if (etaCliente < 18 ) {
-    var sconto = ( prezzoLordo * 20) / 100;
+
+    var sconto = ( prezzoLordo * 20 ) / 100;
 
     var prezzoNetto = prezzoLordo - sconto;
 
     document.getElementById("prezzo").innerHTML = prezzoNetto.toFixed(2);
 
   } else if ( etaCliente >= 65 ) {
-    var sconto = ( prezzoLordo * 40) / 100;
+
+    var sconto = ( prezzoLordo * 40 ) / 100;
 
     var prezzoNetto = prezzoLordo - sconto;
 
     document.getElementById("prezzo").innerHTML = prezzoNetto.toFixed(2);
 
-
   } else{
+
     document.getElementById("prezzo").innerHTML = prezzoLordo.toFixed(2);
+
   }
 
 
