@@ -35,7 +35,7 @@
 
     var prezzoNetto = prezzoLordo - sconto;
 
-    document.getElementById("prezzo").innerHTML = prezzoNetto.toFixed(2) + " € grazie al tuo sconto young hai risparmiato " + sconto + "€";
+    document.getElementById("prezzo").innerHTML = prezzoNetto.toFixed(2) + " € grazie al tuo sconto young hai risparmiato " + sconto.toFixed(2) + "€";
 
   } else if ( etaCliente >= 65 ) {
 
@@ -47,7 +47,7 @@
 
   } else{
 
-    document.getElementById("prezzo").innerHTML = prezzoLordo.toFixed(2) + " € grazie al tuo sconto over60 hai risparmiato " + sconto + "€";
+    document.getElementById("prezzo").innerHTML = prezzoLordo.toFixed(2) + " € grazie al tuo sconto over60 hai risparmiato " + sconto.toFixed(2) + "€";
 
   }
 
