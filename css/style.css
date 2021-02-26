@@ -51,3 +51,19 @@
   font-weight:bold;
   padding:0 10px;
 }
+.hero span{
+  position:fixed;
+  right:0;
+  bottom:0;
+}
+.box button{
+  display:block;
+  margin:50px auto;
+  padding:20px 10px;
+  background-color:#73D700;
+  color:#fff;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+  
+}
