@@ -41,7 +41,7 @@
 }
 .box h2{
   text-align:center;
-  margin-bottom:100px;
+
 }
 .box p{
   font-size: 16px;
@@ -65,5 +65,10 @@
   border:none;
   border-radius:10px;
   font-weight:bold;
-  
+
+}
+.km-eta{
+  display:flex;
+  justify-content:space-around;
+  margin: 50px 10px;
 }

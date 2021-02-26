@@ -7,7 +7,9 @@
 
     var kmRichiesti = parseInt(prompt("Devi inserire solo il numero dei km! Grazie"));
 
-  }
+  } 
+    document.getElementById("km-scelti").innerHTML = kmRichiesti;
+
 // 2 chiedere età clt
 
   // dichiaro var età da richiedere al clt
@@ -19,6 +21,8 @@
     var etaCliente = parseInt(prompt("Devi inserire solo il numero! Grazie"));
 
   }
+
+  document.getElementById("eta-clt").innerHTML = etaCliente;
 
 // 3 calcolare prezzo (0.21 euro al km)
 
