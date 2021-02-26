@@ -7,7 +7,7 @@
 
     var kmRichiesti = parseInt(prompt("Devi inserire solo il numero dei km! Grazie"));
 
-  } 
+  }
     document.getElementById("km-scelti").innerHTML = kmRichiesti;
 
 // 2 chiedere età clt
@@ -47,15 +47,10 @@
 
     var prezzoNetto = prezzoLordo - sconto;
 
-    document.getElementById("prezzo").innerHTML = prezzoNetto.toFixed(2) + " €";
+    document.getElementById("prezzo").innerHTML = prezzoNetto.toFixed(2) + " € grazie al tuo sconto over60 hai risparmiato " + sconto.toFixed(2) + "€";
 
   } else{
 
-    document.getElementById("prezzo").innerHTML = prezzoLordo.toFixed(2) + " € grazie al tuo sconto over60 hai risparmiato " + sconto.toFixed(2) + "€";
+    document.getElementById("prezzo").innerHTML = prezzoLordo + " €";
 
   }
-
-
-
-
-// 5 esito costo su html
