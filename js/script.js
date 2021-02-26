@@ -3,11 +3,22 @@
   // dichiaro variabile sui km e trasformo in numero intero
   var kmRichiesti = parseInt(prompt("Quanti km devi percorrere?"));
 
+  if(isNaN(kmRichiesti)){
+
+    var kmRichiesti = parseInt(prompt("Devi inserire solo il numero dei km! Grazie"));
+
+  }
 // 2 chiedere età clt
 
   // dichiaro var età da richiedere al clt
 
   var etaCliente = parseInt(prompt("Qual è la tua età?"));
+
+  if(isNaN(etaCliente)){
+
+    var etaCliente = parseInt(prompt("Devi inserire solo il numero! Grazie"));
+
+  }
 
 // 3 calcolare prezzo (0.21 euro al km)
 
