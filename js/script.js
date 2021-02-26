@@ -5,7 +5,7 @@
 
   if(isNaN(kmRichiesti)){
 
-    var kmRichiesti = parseInt(prompt("Devi inserire solo il numero dei km! Grazie"));
+      kmRichiesti = parseInt(prompt("Devi inserire solo il numero dei km! Grazie"));
 
   }
     document.getElementById("km-scelti").innerHTML = kmRichiesti;
@@ -18,7 +18,7 @@
 
   if(isNaN(etaCliente)){
 
-    var etaCliente = parseInt(prompt("Devi inserire solo il numero! Grazie"));
+    etaCliente = parseInt(prompt("Devi inserire solo il numero! Grazie"));
 
   }
 
@@ -26,8 +26,12 @@
 
 // 3 calcolare prezzo (0.21 euro al km)
 
-  // dichiaro variabile prezzo lordo
+  // dichiaro variabile prezzo lordo e sconto e prezzo netto
   var prezzoLordo = 0.21 * kmRichiesti;
+
+  var prezzoNetto;
+
+  var sconto;
 
 // 4 applicare sconto 20% minorenni 40% over 65
 
@@ -35,17 +39,17 @@
 
   if (etaCliente < 18 ) {
 
-    var sconto = ( prezzoLordo * 20 ) / 100;
+    sconto = ( prezzoLordo * 20 ) / 100;
 
-    var prezzoNetto = prezzoLordo - sconto;
+    prezzoNetto = prezzoLordo - sconto;
 
     document.getElementById("prezzo").innerHTML = prezzoNetto.toFixed(2) + " € grazie al tuo sconto young hai risparmiato " + sconto.toFixed(2) + "€";
 
   } else if ( etaCliente >= 65 ) {
 
-    var sconto = ( prezzoLordo * 40 ) / 100;
+    sconto = ( prezzoLordo * 40 ) / 100;
 
-    var prezzoNetto = prezzoLordo - sconto;
+    prezzoNetto = prezzoLordo - sconto;
 
     document.getElementById("prezzo").innerHTML = prezzoNetto.toFixed(2) + " € grazie al tuo sconto over60 hai risparmiato " + sconto.toFixed(2) + "€";
 
